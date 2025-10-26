@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Registro</title>
+    <link href="styles/styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Formulario Registro</h1>
+        <h2><span>Realizado por: </span><i style="color: rgb(250,35,168);">Claudia Coello</i> </h2>
+        <form action="#" method="post" "multipart/form-data">
+            <!--Formulario nombre-->
+            <label>Nombre Completo:</label>
+            <br>
+            <input type="text" name="nombre" placeholder="Ingresa tu nombre: " required>
+            <br>
+
+            <!--Formulario password-->
+            <label>Contrasena</label><br>
+            <input type="password" name="contrasena" placeholder="Crea una contrasena"><br>
+            
+            <!--Fomulario correo-->
+            <label>Correo Electronico</label><br>
+            
+            <!--Formulario edad-->
+            <label>Edad</label><br>
+            <input type="number" name="edad"><br>
+
+            <!--Formualrio telefono-->
+            <label>Telefono</label><br>
+            <input name="telefono" type="tel" placeholder="+593"><br>
+
+            <!--Formulario pagina web-->
+            <label>Pagina web</label>
+            <br><input type="url" name="correo" placeholder="https://tusitio.com"><br>
+
+            <!--Formulario fecha nacimiento-->
+            <label>Fecha de Nacimiento</label>
+            <br><input type="date"><br>
+
+            <!--Hora cita-->
+            <label>Hora de cita</label>
+            <br><input type="time" name="hora_consulta"><br>
+
+            <!--Fecha y hora evento-->
+            <label>Fecha y hora del evento</label>
+            <br><input type="datetime" name="fecha_hora"><br>
+
+            <!--Mes de pago-->
+            <label>Mes de Pago</label>
+            <br><input type="month" name="mes">
+
+            <!--Semana actual-->
+            <label>Semana Actual</label>
+            <br><input type="week" name="semana"><br>
+
+            <!--Color favorito-->
+            <label>Color Favorito</label>
+            <br><input type="color" name="color"><br>
+
+            <!--Nivel Satisfaccion-->
+            <label>Nivel de Satisfaccion</label>
+            <br><input type="range" name="satisfaccion" min="0" max="10"><br>
+
+            <!--Formulario genero-->
+            <label>Genero</label>
+            <br>
+            <form type="radio-group">
+                <div class="radio-group">
+                    <label><input type="radio" name="genero" value="F">Femenino</label>
+                    <label><input type="radio" name="genero" value="M">Masculino</label>
+                </div>
+            </form>
+            <label>Intereses</label>
+            
+            <!--Formulario de intereses-->
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="intereses" value="tecnologia">Tecnologia</label>
+                <label><input type="checkbox" name="intereses" value="deporte">Deporte</label>
+                <label><input name="intereses" type="checkbox" value="arte">Arte</label>
+            
+            </div>
+            <label>Subir Archivo</label>
+            <br>
+            <input type="file" name="foto">
+            <input type="hidden" name="id" value="001">
+            
+            <!--boton subir-->
+            <div class="buttons">
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Borrar">
+            </div>
+
+        </form>
+    </div>
+</body>
+</html>
